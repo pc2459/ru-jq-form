@@ -2,15 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Untitled</title>
+  <title>Form Practice</title>
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 
-	<div class="update-form">
+	<div class="form-wrapper">
 		
-		
+		<form action="#"  id="form">
+
+			<fieldset class="update-form">
+
+				<label>Name
+				<input type="text" name="name" id="form-name">
+				</label>
+
+				<label>Bio
+					<textarea name="bio" cols="30" rows="10" id="form-bio"></textarea>
+				</label>
+
+				<label>Favourite Books
+					<textarea name="books" cols="30" rows="10" id="form-books"></textarea>
+				</label>
+
+				<label>Favourite Javascript Libraries
+					<textarea name="libraries" cols="30" rows="10" id="form-libraries"></textarea>
+				</label>
+
+			</fieldset>
+
+			<input type="submit" value="Submit" class="button">
+
+		</form>
 
 	</div>
 
@@ -23,13 +47,13 @@
 		<div class="textbox textbox-short" id="name">Obi-Wan Kenobi</div>
 		
 		<p class="label">Bio:</p>
-		<div class="textbox textbox-long" id="description">Obi-Wan is a Jedi Master at Coruscant University. He currently teaches Lightsabre Methodologies.</div>
+		<div class="textbox textbox-long" id="bio">Obi-Wan is a Jedi Master at Coruscant University. He currently teaches Lightsabre Methodologies.</div>
 
 		<p class="label">Favourite Books:</p>
 		<div class="textbox textbox-long" id="books">Light And Order, Hard Up in Tattooine</div>
 
 		<p class="label">Favourite Javascript Libraries:</p>
-		<div class="textbox textbox-long" id="description">JQuery</div>
+		<div class="textbox textbox-long" id="libraries">JQuery</div>
 
 
 	</div>
