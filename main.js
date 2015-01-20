@@ -10,5 +10,12 @@ $(document).on('ready', function() {
 
 		e.preventDefault();
 	})
+
+	$( "#show-form" ).on("click", function(){
+		$("#form-wrapper").toggleClass("visibility");
+		var text = $(this).text() == "Show Form" ? "Hide Form" : "Show Form";
+		$(this).text(text);
+
+	})
   
 });
