@@ -8,16 +8,34 @@ $(document).on('ready', function() {
 
 
 	// Update profile values on submit
-	$( "#form" ).submit(function(e){
+	// $( "#form" ).submit(function(e){
 
+	// 	$("#name").text($("#form-name").val());
+	// 	$("#bio").text($("#form-bio").val());
+	// 	$("#books").text($("#form-books").val());
+	// 	$("#libraries").text($("#form-libraries").val());
+
+	// 	// Prevent page from updating on submit
+	// 	e.preventDefault();
+	// })
+
+	// "Auto-save" functionality
+	$("#form-name").blur(function(){
 		$("#name").text($("#form-name").val());
-		$("#bio").text($("#form-bio").val());
-		$("#books").text($("#form-books").val());
-		$("#libraries").text($("#form-libraries").val());
-
-		// Prevent page from updating on submit
-		e.preventDefault();
 	})
+
+	$("#form-bio").blur(function(){
+		$("#bio").text($("#form-bio").val());
+	})
+
+	$("#form-books").blur(function(){
+		$("#books").text($("#form-books").val());
+	})
+
+	$("#form-libraries").blur(function(){
+		$("#libraries").text($("#form-libraries").val());
+	})
+
 
 	// Toggle visibility
 	$( "#show-form" ).on("click", function(){
